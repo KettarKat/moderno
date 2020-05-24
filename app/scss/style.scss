@@ -185,6 +185,7 @@ background-color:$green;
   &-author {
     display: flex;
     align-items: center;
+    max-width: 245px;
     span {
       font-size: 14px;
       font-weight: 500;
@@ -198,6 +199,12 @@ background-color:$green;
       background-repeat: no-repeat;
       background-size: cover;
       margin-right: 14px;
+    }
+  }
+  &-star {
+    span {
+      color:$bg;
+      font-size: 12px;
     }
   }
 }
@@ -218,5 +225,33 @@ background-color:$green;
     }
   }
 }
-
+//end products
+//start product-slider
+.product-slider {
+  padding: 110px 0px 120px;
+  .slick-dots {
+    text-align: center;
+    margin-top: 50px;
+    li {
+      display: inline-block;
+      margin-left: 3px;
+      margin-right: 3px;
+      &.slick-active {
+        button {
+          background-color:$green;
+        }
+      }
+    
+      button {
+        border: none;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        font-size: 0;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+}
 
