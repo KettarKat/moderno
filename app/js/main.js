@@ -22,6 +22,17 @@ $(function(){
         prefix: "$"
 });
 
+$('.icon-list').on('click', function(){
+  $('.product__item').addClass('list');
+  $('.icon-list').addClass('active');
+  $('.icon-th-large').removeClass('active');
+});
+$('.icon-th-large').on('click', function(){
+  $('.product__item').removeClass('list');
+  $('.icon-th-large').addClass('active');
+  $('.icon-list').removeClass('active');
+});
+
   var mixer = mixitup('.products__inner-box');
 
 
