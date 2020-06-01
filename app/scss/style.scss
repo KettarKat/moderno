@@ -2,6 +2,7 @@
 @import 'global';
 @import 'fonts';
 //start header//
+
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -97,6 +98,7 @@ background-color:$green;
   }
 }
 .basket {
+  margin-right: 20px;
   span {
       background-color: $green;
   }
@@ -111,7 +113,6 @@ background-color:$green;
   }
 }
 .user {
-  margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
@@ -197,7 +198,7 @@ background-color:$green;
   right: -6px;
   height: 0;
   overflow: hidden;
-  
+  z-index: 1;
 }
 .basket__box,
 .notification__box,
@@ -306,6 +307,10 @@ background-color:$green;
     &::before{
     color: $tomato;
   }
+}
+.header__btn-menu,
+.menu_btn {
+  display: none;
 }
 //end header//
 //start search//
@@ -1161,3 +1166,6 @@ button.icon-unsorted {
 }
 
 //end product page
+
+
+@import 'media';
