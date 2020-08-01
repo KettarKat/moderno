@@ -1884,6 +1884,121 @@ button.icon-unsorted {
   margin-left: 259px;
 }
 //settings end
+//profile start
+.profile__inner {
+  display: flex;
+}
+.profile__aside {
+  margin-right: 30px;
+  max-width: 270px;
+  width: 100%;
+  & .footer__social-link {
+    margin-bottom: 30px;
+  }
+}
+.profile__content {
+  width: 100%;
+}
+.profile-status {
+  color: #707070;
+  font-size: 13px;
+  padding: 4px 12px 4px 30px;
+  border: 1px solid #d6d6d6;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    left: 11px;
+    top: 11px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+  }
+}
+.profile-on {
+  &::before {
+    background-color: $green;
+  }
+} 
+.profile-off {
+    &::before {
+      background-color: $red;
+    }
+}
+.profile__aside-btn {
+  margin-bottom: 13px;
+  text-align: center;
+}
+.profile__aside-message {
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  background-color: $text;
+  @include f500;
+  color: #fff;
+  padding: 18px 10px;
+  box-shadow: 0.5px 0.866px 2px 0px rgb( 69, 90, 100 );
+  position: relative;
+  &::before {
+    content: "\f003";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 50px;
+    top:17px;
+  }
+}
+.profile__aside-following {
+  margin-bottom: 17px;
+  box-shadow: 0.5px 0.866px 2px 0px rgb( 69, 90, 100 );
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  background-color: $green;
+  @include f700;
+  color: #fff;
+  padding: 18px 10px;
+}
+.profile__banner {
+  padding: 20px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  margin-bottom: 35px;
+}
+.profile__banner-img {
+  background-image: url(../images/content/profile-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 332px;
+}
+.profile__items {
+  display: flex;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  @include f500;
+
+}
+.profile__item {
+  width: 25%;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 5px 17px;
+  & + .profile__item  {
+    border-left: 1px solid #dedede;
+  }
+  
+  &-title {
+    color: $bg;
+  }
+  &-content {
+    color: #707070;
+  }
+  &-sales {
+      color: $bg;
+    }
+}
+//profile end
 
 
 @import 'media';
