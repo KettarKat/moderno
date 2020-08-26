@@ -1456,6 +1456,37 @@ button.icon-unsorted {
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
+  .jq-selectbox {
+    width: 100%;
+  }
+  .jq-selectbox__select {
+    height: 25px;
+    padding: 0px 28px 0px 10px;
+    border: 1px solid #d7d7d7;
+    border-bottom-color: #d7d7d7;
+    border-radius: 0px;
+    background: #f9f9f9;
+    box-shadow: none;
+    font-family: 'Roboto-Regular', sans-serif;
+    color: #70838d;
+    text-shadow: none;
+    line-height: 25px;
+  }
+  .jq-selectbox__trigger-arrow {
+    border: none;
+    top: -10px;
+    right: 18px;
+    line-height: 40px;
+    font-size: 13px;
+    &::before {
+      font-family: 'icomoon';
+      content: "\f0dd";
+      color: $green;
+    }
+  }
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
 }
 .price__product {
   font-size: 22px;
@@ -1632,7 +1663,7 @@ button.icon-unsorted {
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     padding: 20px 30px 16px;
     margin-bottom: 100px;
     border-radius: 4px;
@@ -1787,7 +1818,7 @@ button.icon-unsorted {
 
 }
 //end contact
-//settings start
+//personal-settings start
 .settings {
   padding-bottom: 100px;
 }
@@ -1873,6 +1904,38 @@ button.icon-unsorted {
     border: 1px solid #dedede;
     background-color: #f9f9f9;
   }
+  .jq-selectbox {
+    max-width: 540px;
+    width: 100%;
+  }
+  .jq-selectbox__select {
+    height: 40px;
+    padding: 0px 18px;
+    border: 1px solid #d7d7d7;
+    border-bottom-color: #d7d7d7;
+    border-radius: 0px;
+    background: #f9f9f9;
+    box-shadow: none;
+    font-family: 'Roboto-Regular', sans-serif;
+    color: #707070;
+    text-shadow: none;
+    line-height: 40px;
+    
+  }
+  .jq-selectbox__trigger-arrow {
+    border: none;
+    top:-2px;
+    right: 20px;
+    line-height: 40px;
+    font-size: 15px;
+    &::before {
+      font-family: 'icomoon';
+      content: "\f0dd";
+    }
+  }
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
 }
 .page-box__btn {
   background-color: $green;
@@ -1883,7 +1946,7 @@ button.icon-unsorted {
   text-align: center;
   margin-left: 259px;
 }
-//settings end
+//personal-settings end
 //profile start
 .profile__inner {
   display: flex;
