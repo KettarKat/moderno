@@ -478,6 +478,12 @@ background-color:$green;
   padding: 110px 0px ;
   background-color: $grey;
 }
+.products__wrapper,
+.product-slider__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .products__inner-btn {
   text-align: center;
   margin-bottom: 60px;
@@ -499,8 +505,13 @@ background-color:$green;
 }
 .products__inner-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  margin-left: -30px;
+}
+.products .product__item {
+  flex-basis: calc(25% - 30px);
+  margin-left: 30px;
 }
 .product__item {
   max-width: 442px;
@@ -1072,6 +1083,9 @@ background-color:$green;
   background-color: transparent;
   border-radius: 0px;
 }
+.irs--flat {
+  padding-right: 20px;
+}
 .jq-ry-container {
   padding: 0;
 }
@@ -1124,8 +1138,9 @@ button.icon-unsorted {
 }
 .product-page__content {
   .product__item {
-    max-width: 270px;
+    flex-basis: calc(33.3333% - 30px);
     transition: all .5s;
+    margin-left: 30px;
     &-img {
       min-height: 180px;
     }
@@ -1149,9 +1164,10 @@ button.icon-unsorted {
 }
 .product-page__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  margin-left: -30px;
 }
 .plagination {
   &__list {
@@ -1223,6 +1239,7 @@ button.icon-unsorted {
 .product__item {
   &.list {
     max-width: 100%;
+    flex-basis: 100%;
     .product__item-img {
       width: 240px;
       float: left;
@@ -1354,7 +1371,7 @@ button.icon-unsorted {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 0px;
+  padding: 16px;
 }
 .product-one__images {
   max-width: 829px;
@@ -1824,7 +1841,6 @@ button.icon-unsorted {
 }
 .product-one__tabs.settings__tabs {
   display: flex;
-  
   .tabs {
     max-width: 270px;
     width: 100%;
