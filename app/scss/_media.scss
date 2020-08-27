@@ -93,7 +93,6 @@
     background-size: cover;
     width: 50px;
     height: 97px;
-    
   }
 }
 @media (max-width:1020px) {
@@ -173,7 +172,7 @@
     margin-bottom: 20px;
   }
   .product-page__items {
-  margin-left: -20px;
+    margin-left: -20px;
   }
   .product__item {
     &.list {
@@ -360,6 +359,38 @@
   .tutorial__item {
     flex-basis: 100%;
   }
+  .search__inner {
+    padding-top: 100px;
+  }
+  .search {
+    min-height: 450px;
+  }
+  .products,
+  .product-slider,
+  .advantages,
+  .tutorial {
+    padding: 70px 0px;
+  }
+  .products__title.title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .products__bottom-btn {
+    margin-top: 0;
+  }
+  .product-slider {
+    padding-top: 0;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .tutorial {
+    padding-bottom: 20px;
+  }
+  .footer__inner {
+    padding-top: 60px;
+  }
 }
 @media (max-width:600px) {
   .page-404__inner {
@@ -453,6 +484,9 @@
   .product__price button {
     width: 100%;
   }
+  .product-one__images {
+    height: 300px;
+  }
 }
 @media (max-width:540px) {
   .footer__col {
@@ -481,6 +515,9 @@
   .product-slider .slick-dots li {
     margin-left: 2px;
     margin-right: 2px;
+  }
+  .withdrawals__title {
+    padding-left: 10px;
   }
 }
 @media (max-width:520px) {
@@ -514,7 +551,7 @@
       right: -100%;
       z-index: 2;
     &.active {
-    left: 70px;
+    left: 64px;
     right: 90px;
     }
   }
@@ -551,6 +588,10 @@
   .create-acc {
     width: 100%;
   }
+  .upload__inner-title,
+  .withdrawals__title {
+    font-size: 18px;
+  }
 }
 @media (max-width:495px) {
   .user__info {
@@ -572,6 +613,23 @@
   }
   .about__wrapper {
     margin-bottom: 80px;
+  }
+  .about__head {
+    font-size: 18px;
+  }
+  .about__box {
+    h3 {
+      font-size: 15px;
+    }
+  }
+  .contact__form-title {
+    font-size: 18px;
+  }
+  .contact__info-title {
+    font-size: 18px;
+  }
+  .product-page__inner {
+    padding-bottom: 60px;
   }
 }
 @media (max-width:390px) {
@@ -613,13 +671,6 @@
     left: -30px;
   }
 }
-
-
-
-
-
-
-
 @media (min-width:841px) {
   .menu__list {
     display: block !important;
